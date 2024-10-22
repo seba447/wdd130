@@ -66,7 +66,7 @@ button {
     font-size: 1.2rem;
 }
 
-button: hoover {
+button, hoover {
     background-color: darkgreen;
 }
 
@@ -77,11 +77,13 @@ footer {
     font-size: 0.8em;
     color: black
     border-top: 1px solid solid #ccc;
+
 }
 
 .form-item {
     display: grid
     align-items: center;
+
 }
 
 .column1 {
