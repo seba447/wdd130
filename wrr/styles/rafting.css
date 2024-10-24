@@ -1,20 +1,112 @@
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+header {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    font-famiy: Arial, sans-sarif;
+    margin:0;
+    padding;
+    box-sizing: border-box;
 
 }
 
-article {
-    margin: 50px;
-    padding: 50px;
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
 }
 
+
+header nav a {
+    background-color: blueviolet;
+
+}
+
+
+.section{
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#superwaterrafting {
+    background-color: antiquewhite;
+    border: 2px solid #ddd;
+    padding: 20px;
+
+
+}
+
+
+#superwaterrafting img {
+    float: right;
+    max-width: :100px;
+    margin-left: 20px;
+
+
+}
+
+
+
+#history{
+    background: color #ece2e2;
+    border: 2px solid #ddd;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+#history img {
+    margin-right: 20px;
+    max-width: 100px;
+
+}
 
 h2 {
-padding: 1rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    text-align: center;
 
 }
+
+
+
+
+.styled-image {
+    max-width: 100px;
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+
+
+}
+
+
+footer {
+    background-color: #d8d8d8;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+footer .social-links img {
+    max-width: 30px;
+    margin: 0 5px;
+
+}
+
 
 
 
