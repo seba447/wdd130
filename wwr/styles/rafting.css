@@ -1,0 +1,170 @@
+:root {
+    --heading-font: "Open Sans", sans-serif;
+    --paragrpah-font: "Lato", sans-serif;
+
+    --primary-color: #2d2b66;
+    --secondary-color: #7c7a71;
+    --accent1-color: #62606d;
+    --accent2-color: #b19f78;
+
+    --white: #fff;
+    --black: #000;
+
+    --footer-background: #333;
+    --footer-color: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragrpah-font);
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    padding: 2em;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.533);
+}
+
+.hero article {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.533);
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 0 2rem;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 2em;
+}
+
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.adventures figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.adventures figure figcaption {
+    background-color: var(--accent2-color);
+    padding: .5em;
+    text-align: center;
+}
+
+
+
+
+/* Footer Styleing Begin */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 1em;
+    margin-top: 50px;
+}
+
+.sociallinks {
+    grid-column: 3;
+}
+
+.wireframe {
+    color: var(--footer-color);
+
+}
+
+.sociallinks a,
+.sociallinks a:hover {
+    background-color: unset;
+    color: unset;
+}
+
+.sociallinks img {
+    width: 65px;
+    height: 65px;
+}
