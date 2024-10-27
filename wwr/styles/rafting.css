@@ -259,7 +259,12 @@ nav a:hover {
 
 
 
-
+.field-grids{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
 
 
 /* Contact US styling begin */
