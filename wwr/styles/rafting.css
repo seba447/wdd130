@@ -136,37 +136,135 @@ nav a:hover {
 }
 
 
-/* Footer Styleing Begin */
-footer {
-    background-color: var(--footer-background);
-    color: var(--footer-color);
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+
+
+
+/*  Home Styling Begins Here*/
+
+.Superwater {
+   position: relative;
+   display: inline-block;
+    
+
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.having-fun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(197, 198, 196, 0.7);
+
+}
+
+
+.water-rafting-h2 {
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(197, 198, 196, 0.7);
+
+
+}
+
+
+
+.button-box {
+    position: absolute;
     align-items: center;
-    padding: 1em;
-    margin-top: 50px;
-}
-
-.sociallinks {
-    grid-column: 3;
-}
-
-.wireframe {
-    color: var(--footer-color);
+    background-color: purple;
 
 }
 
-.sociallinks a,
-.sociallinks a:hover {
-    background-color: unset;
-    color: unset;
+.adventures {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 2em;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+
+
+
 }
 
-.sociallinks img {
-    width: 65px;
-    height: 65px;
+
+.newsletter {
+    grid-column: 4/9;
+    grid-row: 9/11;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
 }
-/*Contact Us Css*/
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+.newsletter p {
+    justify-self: center;
+    font-size: 1.5em;
+    color: var(--black);
+    margin: 1em 0 0 0;
+}
+
+.newsletter-form .field-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin: 1em;
+    align-items: center;
+}
+
+.newsletter-form label {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    color: var(--white);
+    margin: 0;
+}
+
+.newsletter-form input {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.newsletter-form button {
+    background-color: var(--button-color);
+    padding: .5em 1em
+}
+
+.newsletter-form button:hover {
+    background-color: var(--button-color-hover);
+}
+
+
+
+
+
+
+/* Contact US styling begin */
+
+
 .companyInfo{
     display: flex;
     flex-direction: column;
@@ -237,3 +335,151 @@ footer {
     width: 100%;
     background-color: gray;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styleing Begin */
+
+
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 1em;
+    margin-top: 50px;
+}
+
+.sociallinks {
+    grid-column: 3;
+}
+
+.wireframe {
+    color: var(--footer-color);
+
+}
+
+.sociallinks a,
+.sociallinks a:hover {
+    background-color: unset;
+    color: unset;
+}
+
+.sociallinks img {
+    width: 65px;
+    height: 65px;
+}
+
+
+
+
+
+
+
+/* trips styling begins here */
+
+
+
+
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em 5px;
+    margin: 50px auto;
+}
+
+
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em 5px;
+    margin: 1px auto;
+}
+
+.trips-table {
+    grid-column: 1/-1;
+    grid-row: auto;
+}
+
+.trips-table h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+
+
+.trip-duration {
+    grid-column: 1;
+    text-align: center;
+
+}
+
+.trip-cost {
+    grid-column: 2;
+    text-align: center;
+}
+
+.trip-name {
+    grid-column: 3;
+    text-align: center;
+}
+
+.trip-cost:nth-of-type(even),
+.trip-duration:nth-of-type(odd),
+.trip-name:nth-of-type(odd) {
+    background-color: #9f9f9f;
+}
+
+.trip-cost:nth-of-type(odd),
+.trip-duration:nth-of-type(even),
+.trip-name:nth-of-type(even) {
+    background-color: #9f9f9f;
+}
+
+.table-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.trips {
+    gap: 20px;
+
+}
+
+.adventures{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+gap: 0 2em;
+}
+
+
+
+
+
+
+/* Grid Placement */
+
+
+
+
+
+
+
+
+
+
